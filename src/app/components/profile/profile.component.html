@@ -1,0 +1,19 @@
+<section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-2.png" alt="profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">André Souza</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" (click)="downloadCV()">Download CV</button>
+        <button class="btn btn-color-1" routerLink="/contact">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" (click)="openLinkedIn()" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" (click)="openGithub()" />
+      </div>
+    </div>
+</section>
+ 
