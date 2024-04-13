@@ -1,4 +1,10 @@
 <nav id="desktop-nav">
+  <button class="toggle-mode-btn" (click)="toggleDarkMode()">
+    <img src="./../../../assets/moon-outline.svg" alt="Dark Theme" class="icon" [hidden]="isDarkMode">
+    <img src="./../../../assets/sunny-outline.svg" alt="Light Theme" class="icon" [hidden]="!isDarkMode">
+  </button>
+  
+  
     <div class="logo">André Souza</div>
     <div>
       <ul class="nav-links">
@@ -12,16 +18,16 @@
   <nav id="hamburger-nav">
     <div class="logo">André Souza</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
+      <div class="hamburger-icon"  (click)="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#about" (click)="toggleMenu()">About</a></li>
+        <li><a href="#experience" (click)="toggleMenu()" >Experience</a></li>
+        <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* CSS para Modo Claro */
+body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* CSS para Modo Escuro */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Botão de Alternância de Modo */
+  .toggle-mode-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; /* Cor padrão do ícone */
+  }
+  
+  .toggle-mode-btn:focus {
+    outline: none;
+  }
+  
+  .toggle-mode-btn .icon {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .toggle-mode-btn:hover .icon {
+    color: #666; /* Cor do ícone ao passar o mouse */
+  }
+  

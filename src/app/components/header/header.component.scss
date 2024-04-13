@@ -119,3 +119,32 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
+
+@media screen and (max-width: 1200px) {
+  #hamburger-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: flex;
+  }
+}
+  @media screen and (max-width: 800px) {
+
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+}
