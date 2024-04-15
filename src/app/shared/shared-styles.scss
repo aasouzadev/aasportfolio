@@ -1,22 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 /* GENERAL */
 
 * {
   margin: 0;
   padding: 0;
+  transition: all 300ms ease; /* Adicionado transição para todos os elementos */
 }
 
 :root {
   font-family: "Poppins", sans-serif;
+  --text-color: rgb(85, 85, 85);
+  --dark-background: #333;
+  --light-text: #fff;
+  --dark-text: #333;
+  --link-color: black;
+  --link-hover-color: #666;
+  --btn-background: transparent;
+  --btn-color: #333;
+  --btn-hover-color: #666;
+  --hamburger-background: white;
+  --hamburger-icon-color: black;
+  --section-padding: 4vh;
+  --section-margin: 0 10rem;
+  --profile-height: 80vh;
+  --icon-color: black;
+  --btn-font-weight: 600;
+  --btn-padding: 1rem;
+  --btn-width: 8rem;
+  --btn-border-radius: 2rem;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--light-background); /* Definir cor de fundo padrão */
+  color: var(--text-color); /* Definir cor de texto padrão */
 }
 
-p {
-  color: rgb(85, 85, 85);
+body {
+  background-color: var(--light-background); /* Definir cor de fundo padrão */
+  color: var(--text-color); /* Definir cor de texto padrão */
 }
 
 /* TRANSITION */
@@ -28,24 +49,29 @@ a,
 
 /* DARK MODE */
 
-/* CSS para Modo Escuro */
 body.dark-mode {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--dark-background);
+  color: var(--light-text);
+}
+
+body.dark-mode * {
+  color: var(--light-text); /* Alterar cor de todos os elementos para o texto claro */
 }
 
 body.dark-mode a {
-  color: #fff; /* Cor dos links no modo escuro */
-  text-decoration-color: #fff;
+  color: var(--light-text);
+  text-decoration-color: var(--light-text);
 }
 
 /* Botão de Alternância de Modo */
+
 .toggle-mode-btn {
-  background-color: transparent;
+  background-color: var(--btn-background);
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #333; /* Cor padrão do ícone */
+  color: var(--btn-color);
+  align-items: center;
 }
 
 .toggle-mode-btn:focus {
@@ -57,7 +83,7 @@ body.dark-mode a {
 }
 
 .toggle-mode-btn:hover .icon {
-  color: #666; /* Cor do ícone ao passar o mouse */
+  color: var(--btn-hover-color);
 }
 
 /* HAMBURGER MENU */
@@ -83,19 +109,21 @@ body.dark-mode a {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  background-color: var(--hamburger-icon-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--hamburger-background);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  opacity: 70%;
 }
 
 .menu-links a {
@@ -103,12 +131,13 @@ body.dark-mode a {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--link-color);
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
+  text-align: center;
   list-style: none;
 }
 
@@ -143,9 +172,9 @@ body.dark-mode a {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: var(--section-padding);
   height: 96vh;
-  margin: 0 10rem;
+  margin: var(--section-margin);
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -160,7 +189,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: var(--profile-height);
 }
 
 .section__pic-container {
@@ -207,6 +236,12 @@ section {
   height: 2rem;
 }
 
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -216,11 +251,11 @@ section {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: var(--btn-font-weight);
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+  padding: var(--btn-padding);
+  width: var(--btn-width);
+  border-radius: var(--btn-border-radius);
 }
 
 .btn-color-1,
@@ -255,106 +290,7 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
-
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 @media screen and (max-width: 1400px) {
-  #desktop-nav {
-    display: flex;
-  }
-  #hamburger-nav {
-    display: none;
-  }
-
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -369,13 +305,12 @@ article .icon {
 }
 
 @media screen and (max-width: 1200px) {
-  #hamburger-nav {
+  #desktop-nav {
     display: none;
   }
-  #desktop-nav {
+  #hamburger-nav {
     display: flex;
   }
-
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -405,12 +340,6 @@ article .icon {
 }
 
 @media screen and (max-width: 600px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
   #contact,
   footer {
     height: 40vh;
@@ -422,7 +351,6 @@ article .icon {
   article {
     font-size: 1rem;
   }
-
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;

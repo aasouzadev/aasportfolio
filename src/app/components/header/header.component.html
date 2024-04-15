@@ -28,6 +28,11 @@
         <li><a href="#experience" (click)="toggleMenu()" >Experience</a></li>
         <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
         <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+   <li>     <button class="toggle-mode-btn" (click)="toggleDarkMode()">
+          <img src="./../../../assets/moon-outline.svg" alt="Dark Theme" class="icon" [hidden]="isDarkMode">
+          <img src="./../../../assets/sunny-outline.svg" alt="Light Theme" class="icon" [hidden]="!isDarkMode">
+        </button>
+      </li>
       </div>
     </div>
   </nav>

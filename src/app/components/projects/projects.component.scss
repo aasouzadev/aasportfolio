@@ -1,4 +1,4 @@
-@import './../../shared/shared-styles.scss';
+@import "./../../shared/shared-styles.scss";
 
 #projects {
   position: relative;
@@ -25,12 +25,29 @@
   border-color: rgb(163, 163, 163);
 }
 
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+
+
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -47,15 +64,32 @@ article .icon {
 }
 
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+
 
 @media screen and (max-width: 1400px) {
   #projects {
     height: fit-content;
+  }
+  .about-containers {
+    flex-wrap: wrap;
   }
 }
 
