@@ -2,40 +2,88 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --text-color: rgb(85, 85, 85);
+  --dark-background: #333;
+  --light-text: #fff;
+  --dark-text: #333;
+  --link-color: black;
+  --link-hover-color: #666;
+  --btn-background: transparent;
+  --btn-color: #333;
+  --btn-hover-color: #666;
+  --hamburger-background: white;
+  --hamburger-icon-color: black;
+  --section-padding: 4vh;
+  --section-margin: 0 10rem;
+  --profile-height: 80vh;
+  --icon-color: black;
+  --btn-font-weight: 600;
+  --btn-padding: 1rem;
+  --btn-width: 8rem;
+  --btn-border-radius: 2rem;
+  --article-color: rgba(158, 154, 154, 0.116);
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
   }
 
-  /* CSS para Modo Claro */
-body {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  /* CSS para Modo Escuro */
-  .dark-mode {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Botão de Alternância de Modo */
-  .toggle-mode-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #333; /* Cor padrão do ícone */
-  }
-  
-  .toggle-mode-btn:focus {
-    outline: none;
-  }
-  
-  .toggle-mode-btn .icon {
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .toggle-mode-btn:hover .icon {
-    color: #666; /* Cor do ícone ao passar o mouse */
-  }
-  
+
+
+
+/* DARK MODE */
+
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+}
+
+body.dark-mode * {
+  color: var(--light-text); /* Alterar cor de todos os elementos para o texto claro */
+}
+
+body.dark-mode  h3 {
+  color: var(-text-color);
+}
+
+body.dark-mode a {
+  color: var(--light-text);
+  text-decoration-color: var(--light-text);
+}
+
+body.dark-mode .details-container {
+  background-color: var(--article-color); /* Define o fundo escuro */
+}
+
+body.dark-mode .details-container h3,
+body.dark-mode .details-container p {
+  color: var(--light-text); /* Define a cor do texto como branco */
+}
+
+/* Botão de Alternância de Modo */
+
+.toggle-mode-btn {
+  background-color: var(--btn-background);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--btn-color);
+  align-items: center;
+}
+
+.toggle-mode-btn:focus {
+  outline: none;
+}
+
+.toggle-mode-btn .icon {
+  transition: color 0.3s ease-in-out;
+}
+
+.toggle-mode-btn:hover .icon {
+  color: var(--btn-hover-color);
+}
+
