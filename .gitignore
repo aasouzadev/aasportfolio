@@ -42,11 +42,5 @@ testem.log
 Thumbs.db
 
 # Assets
-#src/assets
-src/assets/about-pic2.png
-src/assets/about-pic1.png
-src/assets/profile-1.png
-src/assets/profile-3.png
-src/assets/profile-4.png
-src/assets/profile-pic-3.png
-src/assets/resume-example.pdf
+src/assets/old
+
