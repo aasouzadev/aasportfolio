@@ -1,38 +1,60 @@
 <nav id="desktop-nav">
   <button class="toggle-mode-btn" (click)="toggleDarkMode()">
-    <img src="./../../../assets/moon-outline.svg" alt="Dark Theme" class="icon" [hidden]="isDarkMode">
-    <img src="./../../../assets/sunny-outline.svg" alt="Light Theme" class="icon" [hidden]="!isDarkMode">
+    <img
+      src="./../../../assets/moon-outline.svg"
+      alt="Dark Theme"
+      class="icon"
+      [hidden]="isDarkMode"
+    />
+    <img
+      src="./../../../assets/sunny-outline.svg"
+      alt="Light Theme"
+      class="icon"
+      [hidden]="!isDarkMode"
+    />
   </button>
-  
-  
-    <div class="logo">André Souza</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+  <div class="logo">André Souza</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">André Souza</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">André Souza</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon"  (click)="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
+    <div class="menu-links">
+      <ul>
         <li><a href="#about" (click)="toggleMenu()">About</a></li>
-        <li><a href="#experience" (click)="toggleMenu()" >Experience</a></li>
+        <li><a href="#experience" (click)="toggleMenu()">Experience</a></li>
         <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
         <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
-   <li>     <button class="toggle-mode-btn" (click)="toggleDarkMode()">
-          <img src="./../../../assets/moon-outline.svg" alt="Dark Theme" class="icon" [hidden]="isDarkMode">
-          <img src="./../../../assets/sunny-outline.svg" alt="Light Theme" class="icon" [hidden]="!isDarkMode">
-        </button>
-      </li>
-      </div>
+        <li>
+          <button class="toggle-mode-btn" (click)="toggleDarkMode()">
+            <img
+              src="./../../../assets/moon-outline.svg"
+              alt="Dark Theme"
+              class="icon"
+              [hidden]="isDarkMode"
+            />
+            <img
+              src="./../../../assets/sunny-outline.svg"
+              alt="Light Theme"
+              class="icon"
+              [hidden]="!isDarkMode"
+            />
+          </button>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
