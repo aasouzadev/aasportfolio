@@ -27,7 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.scss"
@@ -44,7 +46,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "5kb",
+                  "maximumWarning": "5/kb",
                   "maximumError": "5kb"
                 }
               ],
