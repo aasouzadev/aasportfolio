@@ -80,7 +80,9 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-  opacity: 50%;
+  opacity: 60%;
+  align-items: center;
+  justify-content: center;
 }
 
 .hamburger-menu a {
@@ -113,6 +115,8 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  //  border: var(--black) 0.1px solid;
+  border-radius: 8px;
 }
 
 .menu-links a {
@@ -127,6 +131,7 @@ a:hover {
 
 .menu-links li {
   list-style: none;
+  text-align: center;
 }
 
 .menu-links.open {
@@ -412,6 +417,7 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+  gap: 1rem;
 }
 
 .contact-info-container {
