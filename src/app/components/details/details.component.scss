@@ -16,6 +16,7 @@
 .details-img {
   max-width: 500px; /* Ajuste conforme necessário */
   margin-right: 20px;
+  border-radius: 10px;
 }
 
 /* Container para os detalhes do projeto */
@@ -108,4 +109,40 @@
 .feature-description {
   color: var(--gray);
   font-size: 14px;
+}
+/* Media queries para telas menores */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .details-img {
+    max-width: 300px; /* Reduz ainda mais a largura máxima da imagem */
+  }
+
+  .project-details-wrapper {
+    min-width: auto; /* Remove a largura mínima do wrapper */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #details {
+    display: block;
+  }
+  .details-container {
+    flex-direction: column; /* Muda a direção do flex para empilhar os elementos verticalmente */
+  }
+
+  .details-img {
+    margin-right: 0; /* Remove a margem à direita da imagem */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar a imagem do resto dos detalhes */
+  }
+
+  .project-details-wrapper {
+    width: 100%; /* Define a largura do wrapper para ocupar toda a largura disponível */
+  }
+
+  .features-title {
+    margin-top: 20px; /* Adiciona uma margem superior ao título das características para separá-lo do resto do conteúdo */
+  }
 }

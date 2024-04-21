@@ -43,7 +43,7 @@ export class DetailsComponent {
         },
       ],
       techs: [
-        'Angular',
+        'Angular 17',
         'Ionic Framework',
         'Capacitor',
         'Firebase Auth, Firestore, Push Notifications',
@@ -53,6 +53,40 @@ export class DetailsComponent {
         'Efi API PIX',
       ],
       url: 'https://play.google.com/store/apps/details?id=com.aasoftware.coletorfacil',
+    },
+    {
+      id: 1,
+      title: 'AASoftware Site',
+      image: './assets/aasoftware.webp',
+      description:
+        'AASoftware empowers businesses with innovative apps, showcasing their expertise and commitment to excellence. Explore their app portfolio and discover how their Ionic & Angular-built solutions can transform your business.',
+      features: [
+        {
+          title: 'App Portfolio',
+          expanded: false,
+          description:
+            'Explore our portfolio of apps, featuring top-tier Angular and Ionic solutions. Discover how our Ionic & Angular apps can elevate your business to new heights.',
+        },
+        {
+          title: 'About',
+          expanded: false,
+          description:
+            'About AASoftware learn about our founder, our vision, and our mission.',
+        },
+        {
+          title: 'Contact',
+          expanded: false,
+          description: 'Get in touch with us and let us know how we can help.',
+        },
+      ],
+      techs: [
+        'Angular',
+        'Ionic Framework',
+        'Firebase Hosting',
+        'FireStore',
+        'Nest.js',
+      ],
+      url: 'https://aasoftware.web.app/',
     },
   ];
 
