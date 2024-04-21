@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
@@ -16,7 +16,13 @@ export class ProjectsComponent {
     'https://github.com/aasouzadev/aasportfolio',
   ];
 
+  private roter = inject(Router);
+
   openUrl(urlid: number) {
     window.open(this.urls[urlid], '_blank');
+  }
+
+  openDetails(param: number) {
+    this.roter.navigate(['/details', param]);
   }
 }

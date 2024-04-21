@@ -1,0 +1,20 @@
+<section id="details">
+  <img
+    src="{{ projectDetails[id].image }}"
+    alt="Banner App Coletor Fácil"
+    class="details-img"
+  />
+  <div class="project-details-container">
+    <h2 class="details-title">
+      {{ projectDetails[id].title }}
+    </h2>
+    <p>{{ projectDetails[id].description }}</p>
+    <ul>
+      @for (tech of projectDetails[id].techs; track $index) {
+      <li>
+        {{ tech }}
+      </li>
+      }
+    </ul>
+  </div>
+</section>
