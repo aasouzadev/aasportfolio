@@ -20,7 +20,7 @@ html {
 }
 
 p {
-  color: var(--gray);
+  color: var(--dark-gray);
 }
 
 /* TRANSITION */
@@ -340,7 +340,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: var(--dark-gray);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;

@@ -11,10 +11,18 @@
     <h1 class="title">André Souza</h1>
     <p class="section__text__p2">Full Stack Developer</p>
     <div class="btn-container">
-      <button class="btn btn-color-2" (click)="downloadCV()">
+      <button
+        aria-label="Download CV"
+        class="btn btn-color-2"
+        (click)="downloadCV()"
+      >
         Download CV
       </button>
-      <button class="btn btn-color-1" (click)="openContact()">
+      <button
+        aria-label="Contact Me"
+        class="btn btn-color-1"
+        (click)="openContact()"
+      >
         Contact Me
       </button>
     </div>

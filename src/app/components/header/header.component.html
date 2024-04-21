@@ -1,5 +1,9 @@
 <nav id="desktop-nav">
-  <button class="toggle-mode-btn" (click)="toggleDarkMode()">
+  <button
+    aria-label="Toggle Dark Mode"
+    class="toggle-mode-btn"
+    (click)="toggleDarkMode()"
+  >
     <div [hidden]="isDarkMode">
       <svg
         alt="Dark Mode Icon"
