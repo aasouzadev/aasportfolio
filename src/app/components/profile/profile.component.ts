@@ -9,11 +9,17 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.scss',
 })
 export class ProfileComponent {
+  openContact() {
+    const url = 'https://api.whatsapp.com/send?phone=5571981014992';
+    window.open(url, '_blank');
+  }
   openLinkedIn() {
-    throw new Error('Method not implemented.');
+    const url = 'https://www.linkedin.com/in/andre-de-almeida-souza/';
+    window.open(url, '_blank');
   }
   openGithub() {
-    throw new Error('Method not implemented.');
+    const url = 'https://github.com/aasouzadev';
+    window.open(url, '_blank');
   }
   downloadCV() {
     const pdfUrl = './../../../assets/AndreSouzaCV.pdf';
