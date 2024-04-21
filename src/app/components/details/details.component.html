@@ -1,20 +1,53 @@
 <section id="details">
-  <img
-    src="{{ projectDetails[id].image }}"
-    alt="Banner App Coletor Fácil"
-    class="details-img"
-  />
-  <div class="project-details-container">
-    <h2 class="details-title">
-      {{ projectDetails[id].title }}
-    </h2>
-    <p>{{ projectDetails[id].description }}</p>
-    <ul>
-      @for (tech of projectDetails[id].techs; track $index) {
-      <li>
-        {{ tech }}
-      </li>
-      }
-    </ul>
+  <div class="details-container">
+    <img
+      [src]="projectDetails[id].image"
+      alt="Banner App - {{ projectDetails[id].title }}"
+      class="details-img"
+    />
+    <div class="project-details-wrapper">
+      <h2 class="details-title">{{ projectDetails[id].title }}</h2>
+      <p class="details-description">{{ projectDetails[id].description }}</p>
+      <div class="details-actions">
+        <button
+          aria-label="Deploy"
+          (click)="openUrl(id)"
+          class="details-button btn btn-color-1"
+        >
+          Deploy
+        </button>
+      </div>
+      <h3 class="tech-title">Technologies:</h3>
+      <ul class="tech-list">
+        @for (tech of projectDetails[id].techs; track tech) {
+        <li class="tech-item">{{ tech }}</li>
+        }
+      </ul>
+      <h3 class="features-title">Features:</h3>
+      <!--  <ul class="features-list">
+        @for (feature of projectDetails[id].features; track feature) {
+        <li class="feature-item">
+          <h4 class="feature-title" (click)="toggleFeatures()">
+            {{ feature.title }} &#9662;
+          </h4>
+          @if (showFeatures) {
+          <p class="feature-description">{{ feature.description }}</p>
+          }
+        </li>
+        }
+      </ul> -->
+      <ul class="features-list">
+        @for (feature of projectDetails[id].features; track feature) {
+        <li class="feature-item">
+          <h4 class="feature-title" (click)="toggleFeature(feature)">
+            {{ feature.title }} <span class="accordion-icon">&#9662;</span>
+          </h4>
+          @if (feature.expanded) {
+          <p class="feature-description">{{ feature.description }}</p>
+          }
+        </li>
+        }
+      </ul>
+    </div>
   </div>
 </section>

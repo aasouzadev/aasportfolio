@@ -1,0 +1,111 @@
+#details {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: fit-content;
+}
+
+/* Container para os detalhes do projeto */
+.details-container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px; /* Ajuste conforme necessário */
+}
+
+/* Imagem do projeto */
+.details-img {
+  max-width: 500px; /* Ajuste conforme necessário */
+  margin-right: 20px;
+}
+
+/* Container para os detalhes do projeto */
+.project-details-wrapper {
+  min-width: 400px;
+  flex-grow: 1;
+}
+
+/* Título do projeto */
+.details-title {
+  color: var(--dark-gray);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Descrição do projeto */
+.details-description {
+  color: var(--gray);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ações do projeto */
+.details-actions {
+  margin-bottom: 20px;
+}
+
+.details-link {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Título das tecnologias */
+.tech-title {
+  color: var(--dark-gray);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Lista de tecnologias */
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-item {
+  display: inline-block;
+  gap: 1rem;
+  background-color: var(--black);
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 12px;
+}
+
+.tech-item:hover {
+  background-color: var(--gray);
+}
+
+/* Título das características */
+.features-title {
+  color: var(--dark-gray);
+  font-size: 18px;
+  margin: 10px;
+}
+
+/* Lista de características */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  color: var(--dark-gray);
+  font-size: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.feature-description {
+  color: var(--gray);
+  font-size: 14px;
+}

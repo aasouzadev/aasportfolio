@@ -439,11 +439,11 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-
-/* DETAILS */
+/* 
+/* DETAILS 
 #details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding: 2rem;
   margin: 2rem;
@@ -457,13 +457,14 @@ article .icon {
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
-}
+} */
 
 /* FOOTER SECTION */
 
 footer {
   height: 26vh;
   margin: 0 1rem;
+  padding-top: 2rem;
 }
 
 footer p {
