@@ -16,7 +16,7 @@
           <button class="btn btn-color-2" (click)="openUrl(0)">
             PlayStore
           </button>
-          <button class="btn btn-color-1" routerlink="/details/1">
+          <button class="btn btn-color-1" [routerLink]="['/details', 0]">
             Details
           </button>
         </div>
@@ -34,10 +34,7 @@
           <button class="btn btn-color-2 project-btn" (click)="openUrl(1)">
             Site
           </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='https://github.com/'"
-          >
+          <button class="btn btn-color-1" [routerLink]="['/details', 1]">
             Details
           </button>
         </div>
@@ -55,10 +52,7 @@
           <button class="btn btn-color-2 project-btn" (click)="openUrl(2)">
             Github
           </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='https://github.com/'"
-          >
+          <button class="btn btn-color-1" [routerLink]="['/details', 2]">
             Details
           </button>
         </div>
@@ -76,10 +70,7 @@
           <button class="btn btn-color-2 project-btn" (click)="openUrl(3)">
             Github
           </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='https://github.com/'"
-          >
+          <button class="btn btn-color-1" [routerLink]="['/details', 3]">
             Details
           </button>
         </div>

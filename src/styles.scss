@@ -440,6 +440,25 @@ article .icon {
   height: 2.5rem;
 }
 
+/* DETAILS */
+#details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.details-img {
+  border-radius: 2rem;
+  height: 60vh;
+}
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+}
+
 /* FOOTER SECTION */
 
 footer {
