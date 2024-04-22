@@ -63,23 +63,25 @@ export class DetailsComponent {
         'AASoftware empowers businesses with innovative apps, showcasing their expertise and commitment to excellence. Explore their app portfolio and discover how their Ionic & Angular-built solutions can transform your business.',
       features: [
         {
-          title: 'App Portfolio',
+          title: 'Unlock the Power of Our Apps',
           expanded: false,
           description:
-            'Explore our portfolio of apps, featuring top-tier Angular and Ionic solutions. Discover how our Ionic & Angular apps can elevate your business to new heights.',
+            'Embark on a journey through our illustrious portfolio of apps, where we showcase top-tier Angular and Ionic solutions. Witness firsthand how our groundbreaking Ionic & Angular apps can propel your business to unprecedented success.',
         },
         {
-          title: 'About',
+          title: 'Discover Our Story',
           expanded: false,
           description:
-            'About AASoftware learn about our founder, our vision, and our mission.',
+            'Unveil the narrative behind AASoftware – from the visionary minds of our founder to the very essence of our mission. Dive deep into our story and understand the driving force behind our relentless pursuit of excellence.',
         },
         {
-          title: 'Contact',
+          title: 'Let`s Connect and Transform Your Business',
           expanded: false,
-          description: 'Get in touch with us and let us know how we can help.',
+          description:
+            'Reach out to us and take the first step towards unlocking the full potential of your business. Let`s collaborate and revolutionize the way you operate.',
         },
       ],
+
       techs: [
         'Angular',
         'Ionic Framework',
