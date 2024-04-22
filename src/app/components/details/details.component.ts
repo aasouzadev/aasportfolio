@@ -52,6 +52,7 @@ export class DetailsComponent {
         'Docker',
         'Efi API PIX',
       ],
+      urlText: 'PlayStore',
       url: 'https://play.google.com/store/apps/details?id=com.aasoftware.coletorfacil',
     },
     {
@@ -86,6 +87,7 @@ export class DetailsComponent {
         'FireStore',
         'Nest.js',
       ],
+      urlText: 'Website',
       url: 'https://aasoftware.web.app/',
     },
     {
@@ -118,6 +120,7 @@ export class DetailsComponent {
         'Firebase Auth, Firestore, Push Notifications',
         'Still in development',
       ],
+      urlText: 'Website',
       url: 'https://aasoftware.web.app/products?app=desmembrador',
     },
     {
@@ -148,6 +151,8 @@ export class DetailsComponent {
         },
       ],
       techs: ['HTML', 'CSS', 'Angular 17', 'Firebase Hosting'],
+      urlText: 'GitHub',
+      url: 'https://github.com/aasouzadev/aasportfolio',
     },
   ];
 
