@@ -14,7 +14,7 @@
 
 /* Imagem do projeto */
 .details-img {
-  max-width: 500px; /* Ajuste conforme necessário */
+  max-width: 450px; /* Ajuste conforme necessário */
   margin-right: 20px;
   border-radius: 10px;
 }
@@ -27,7 +27,7 @@
 
 /* Título do projeto */
 .details-title {
-  color: var(--dark-gray);
+  color: var(--black);
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -100,7 +100,7 @@
 }
 
 .feature-title {
-  color: var(--dark-gray);
+  color: var(--black);
   font-size: 16px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -111,9 +111,6 @@
   font-size: 14px;
 }
 /* Media queries para telas menores */
-
-@media screen and (max-width: 1400px) {
-}
 
 @media screen and (max-width: 1200px) {
   .details-img {
