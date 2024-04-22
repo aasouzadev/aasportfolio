@@ -51,13 +51,17 @@
     </div>
   </button>
 
-  <div class="logo">André Souza</div>
+  <div class="logo">
+    <a aria-label="Section profile" href="#profile">André Souza</a>
+  </div>
   <div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a aria-label="Section about" href="#about">About</a></li>
+      <li>
+        <a aria-label="Section experience" href="#experience">Experience</a>
+      </li>
+      <li><a aria-label="Section projects" href="#projects">Projects</a></li>
+      <li><a aria-label="Section contact" href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -70,12 +74,35 @@
       <span></span>
     </div>
     <div class="menu-links">
-      <li><a href="#about" (click)="toggleMenu()">About</a></li>
-      <li><a href="#experience" (click)="toggleMenu()">Experience</a></li>
-      <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
-      <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
       <li>
-        <button class="toggle-mode-btn" (click)="toggleDarkMode()">
+        <a aria-label="Section about" href="#about" (click)="toggleMenu()"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          aria-label="Section experience"
+          href="#experience"
+          (click)="toggleMenu()"
+          >Experience</a
+        >
+      </li>
+      <li>
+        <a aria-label="Section projects" href="#projects" (click)="toggleMenu()"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a aria-label="Section contact" href="#contact" (click)="toggleMenu()"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <button
+          aria-label="Toggle Dark Mode"
+          class="toggle-mode-btn"
+          (click)="toggleDarkMode()"
+        >
           <div [hidden]="isDarkMode">
             <svg
               alt="Dark Mode Icon"
