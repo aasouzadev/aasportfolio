@@ -88,87 +88,131 @@
 
 <nav id="hamburger-nav">
   <div class="logo">
-    <a [attr.aria-label]="'SECTION_PROFILE' | translate" href="#profile">{{
-      "ANDRE_SOUZA" | translate
-    }}</a>
+    <a [attr.aria-label]="'SECTION_PROFILE' | translate" href="#profile"
+      >André Souza</a
+    >
   </div>
   <div class="hamburger-menu">
-    <nav id="hamburger-nav">
-      <div class="logo">André Souza</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" (click)="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li>
-            <a aria-label="Section about" href="#about" (click)="toggleMenu()"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              aria-label="Section experience"
-              href="#experience"
-              (click)="toggleMenu()"
-              >Experience</a
-            >
-          </li>
-          <li>
-            <a
-              aria-label="Section projects"
-              href="#projects"
-              (click)="toggleMenu()"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              aria-label="Section contact"
-              href="#contact"
-              (click)="toggleMenu()"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <button
-              aria-label="Toggle Dark Mode"
-              class="toggle-mode-btn"
-              (click)="toggleDarkMode()"
-            ></button>
-          </li>
-        </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li>
+          <a aria-label="Section about" href="#about" (click)="toggleMenu()"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="Section experience"
+            href="#experience"
+            (click)="toggleMenu()"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="Section projects"
+            href="#projects"
+            (click)="toggleMenu()"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a aria-label="Section contact" href="#contact" (click)="toggleMenu()"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <button
+            aria-label="Toggle Dark Mode"
+            class="toggle-mode-btn"
+            (click)="toggleDarkMode()"
+          >
+            <div [hidden]="isDarkMode">
+              <svg
+                alt="Dark Mode Icon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                viewBox="0 0 512 512"
+                fill="var(--black)"
+              >
+                <path
+                  d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+            </div>
+            <div [hidden]="!isDarkMode">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                viewBox="0 0 512 512"
+                fill="var(--black)"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"
+                />
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="80"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+      </div>
+    </div>
+
+    <!--   <nav id="lang-nav">
+      <div class="hamburgerlang-menu">
+        <li>
+          <button
+            [attr.aria-label]="'SWITCH_EN' | translate"
+            (click)="switchLanguage('en')"
+          >
+            En
+          </button>
+        </li>
+        <li>
+          <button
+            [attr.aria-label]="'SWITCH_PT' | translate"
+            (click)="switchLanguage('pt')"
+          >
+            Pt
+          </button>
+        </li>
+        <li>
+          <button
+            [attr.aria-label]="'SWITCH_ES' | translate"
+            href=""
+            (click)="switchLanguage('es')"
+          >
+            Es
+          </button>
+        </li>
       </div>
     </nav>
   </div>
 </nav>
-<nav id="lang-nav">
-  <div class="nav-links">
-    <li>
-      <button
-        [attr.aria-label]="'SWITCH_EN' | translate"
-        (click)="switchLanguage('en')"
-      >
-        En
-      </button>
-    </li>
-    <li>
-      <button
-        [attr.aria-label]="'SWITCH_PT' | translate"
-        (click)="switchLanguage('pt')"
-      >
-        Pt
-      </button>
-    </li>
-    <li>
-      <button
-        [attr.aria-label]="'SWITCH_ES' | translate"
-        href=""
-        (click)="switchLanguage('es')"
-      >
-        Es
-      </button>
-    </li>
+ -->
   </div>
 </nav>
