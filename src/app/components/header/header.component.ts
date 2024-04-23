@@ -1,14 +1,23 @@
 import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements OnInit {
+  isDarkMode: boolean = false;
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['en', 'pt', 'es']);
+    translate.setDefaultLang('en');
+    const lang = localStorage.getItem('lang');
+    if (lang) {
+      translate.use(lang);
+    }
+  }
   ngOnInit(): void {
     const isDarkMode = localStorage.getItem('isDarkMode');
     if (isDarkMode === 'true') {
@@ -16,7 +25,11 @@ export class HeaderComponent implements OnInit {
       this.Darkmode();
     }
   }
-  isDarkMode: boolean = false;
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('lang', language);
+  }
 
   toggleMenu() {
     const menu = document.querySelector('.menu-links');
