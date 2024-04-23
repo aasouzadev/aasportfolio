@@ -38,5 +38,120 @@
     "DETAILS": "Detalles",
     "GET_IN_TOUCH": "Ponte en",
     "CALL_ME": "Llámame al",
-    "ALL_RIGHTS": "Todos los Derechos Reservados"
+    "ALL_RIGHTS": "Todos los Derechos Reservados",
+    "PROJECT_DETAILS": [
+        {
+            "id": 0,
+            "title": "Coletor Fácil",
+            "description": "¡El Coletor Fácil, la solución definitiva para una gestión de inventario efectiva y segura! ¡Diseñado para hacer el proceso fácil, rápido y accesible.",
+            "features": [
+                {
+                    "title": "Equilibrio de Inventario con Reconocimiento de Código de Barras por IA",
+                    "description": "Nuestra solución permite a los usuarios crear balances de inventario sin esfuerzo aprovechando la tecnología inteligente de reconocimiento de código de barras. Esta función garantiza recuentos de inventario rápidos y precisos, capacitando a las empresas para mantener niveles de stock óptimos."
+                },
+                {
+                    "title": "Verificación de Recepción a Ciegas:",
+                    "description": "Con nuestra función de verificación de recepción a ciegas, los usuarios pueden importar facturas y compararlas perfectamente con los datos de los bienes recibidos. Este proceso aumenta la precisión y la confiabilidad, proporcionando a las empresas una mayor confianza en sus procesos de recepción."
+                },
+                {
+                    "title": "Base de Datos de Productos de la Comunidad:",
+                    "description": "Nuestra extensa base de datos de productos de la comunidad ofrece acceso a más de 50,000 entradas de productos. Los usuarios pueden buscar y recuperar fácilmente información detallada sobre varios productos, facilitando la toma de decisiones informadas y la gestión eficiente de inventario."
+                }
+            ],
+            "techs": [
+                "Angular 17",
+                "Framework Ionic",
+                "Capacitor",
+                "Autenticación Firebase, Firestore, Notificaciones Push",
+                "Nest.js",
+                "Infraestructura de Nube Oracle (OCI)",
+                "Docker",
+                "API PIX de Efi"
+            ],
+            "urlText": "PlayStore",
+            "url": "https://play.google.com/store/apps/details?id=com.aasoftware.coletorfacil"
+        },
+        {
+            "id": 1,
+            "title": "Sitio de AASoftware",
+            "description": "AASoftware capacita a las empresas con aplicaciones innovadoras, mostrando su experiencia y compromiso con la excelencia. Explore su portafolio de aplicaciones y descubra cómo sus soluciones construidas con Ionic & Angular pueden transformar su negocio.",
+            "features": [
+                {
+                    "title": "Desbloquea el Poder de Nuestras Aplicaciones",
+                    "description": "Embárquese en un viaje a través de nuestro ilustre portafolio de aplicaciones, donde presentamos soluciones Angular e Ionic de primera clase. Vea de primera mano cómo nuestras revolucionarias aplicaciones de Ionic & Angular pueden impulsar su negocio hacia un éxito sin precedentes."
+                },
+                {
+                    "title": "Descubre Nuestra Historia",
+                    "description": "Revele la narrativa detrás de AASoftware, desde las mentes visionarias de nuestro fundador hasta la esencia misma de nuestra misión. Sumérjase en nuestra historia y comprenda la fuerza impulsora detrás de nuestra búsqueda incesante de la excelencia."
+                },
+                {
+                    "title": "Conéctate y Transforma tu Negocio",
+                    "description": "Contáctenos y dé el primer paso para desbloquear todo el potencial de su negocio. Colaboremos y revolucionemos la forma en que opera."
+                }
+            ],
+            "techs": [
+                "Angular",
+                "Framework Ionic",
+                "Hospedaje Firebase",
+                "FireStore",
+                "Nest.js"
+            ],
+            "urlText": "Sitio",
+            "url": "https://aasoftware.web.app/"
+        },
+        {
+            "id": 3,
+            "title": "Desmembrador",
+            "description": "En el mundo dinámico del procesamiento de carne, los cálculos precisos de rendimiento son cruciales para optimizar ganancias y garantizar operaciones eficientes. Presentamos la aplicación Desmembrador, su solución completa para simplificar cálculos de rendimiento, comparar resultados entre diferentes cortes y proveedores, y generar estimaciones de ganancias basadas en márgenes y precios basados en peso.",
+            "features": [
+                {
+                    "title": "Cálculos de Rendimiento",
+                    "description": "Simplifique los cálculos de rendimiento para varios cortes de carne."
+                },
+                {
+                    "title": "Benchmarking y Análisis",
+                    "description": "Compare datos de rendimiento entre cortes y proveedores."
+                },
+                {
+                    "title": "Estimación de Ganancias",
+                    "description": "Prediga ganancias potenciales en función del margen y los precios basados en peso."
+                }
+            ],
+            "techs": [
+                "Angular",
+                "Framework Ionic",
+                "Autenticación Firebase, Firestore, Notificaciones Push",
+                "Todavía en desarrollo"
+            ],
+            "urlText": "Sitio",
+            "url": "https://aasoftware.web.app/products?app=desmembrador"
+        },
+        {
+            "id": 4,
+            "title": "Creado con Pasión: Un Portafolio de Diseño Limpio, Alto Rendimiento y Excelencia con Angular 17",
+            "description": "Bienvenido a mi portafolio, un testimonio de mi pasión inquebrantable por crear experiencias digitales que sean visualmente cautivadoras e impecables en términos de funcionalidad. Como un habilidoso desarrollador front-end, combino meticulosamente principios de diseño limpio con tecnologías de vanguardia para ofrecer soluciones que no solo involucran a los usuarios, sino que también impulsan resultados comerciales.",
+            "features": [
+                {
+                    "title": "Logrando la Excelencia de PageSpeed",
+                    "description": "Crear sitios web de alto rendimiento es crucial para un portafolio exitoso. Al adherirse a las mejores prácticas, como la optimización de la estructura del código, la minimización del tamaño de los recursos, el aprovechamiento de técnicas de almacenamiento en caché y garantizar la carga eficiente de imágenes, puede lograr consistentemente altas puntuaciones en Insights de PageSpeed."
+                },
+                {
+                    "title": "Estética y Funcionalidad en Armonía",
+                    "description": "Creo que el diseño de un sitio web no debe ser solo una capa superficial, sino una parte integral de su funcionalidad. Mi enfoque de diseño está profundamente arraigado en el minimalismo, garantizando que cada elemento sirva a un propósito y contribuya a una experiencia del usuario despejada e intuitiva. Elaboro meticulosamente códigos HTML y CSS, adhiriéndome a los últimos estándares web y mejores prácticas para crear interfaces visualmente atractivas y receptivas que se adapten perfectamente a cualquier dispositivo."
+                },
+                {
+                    "title": "Compromiso con la Excelencia",
+                    "description": "Mi compromiso con la excelencia va más allá de la proficiencia técnica. Me comprometo a seguir las mejores prácticas de la industria, asegurando que mi código esté bien documentado, sea probado unitariamente y esté optimizado para el rendimiento."
+                }
+            ],
+            "techs": [
+                "HTML",
+                "CSS",
+                "Angular 17",
+                "Hospedaje Firebase"
+            ],
+            "urlText": "GitHub",
+            "url": "https://github.com/aasouzadev/aasportfolio"
+        }
+    ]
 }

@@ -39,5 +39,120 @@
     "DETAILS": "Detalhes",
     "GET_IN_TOUCH": "Entre em",
     "CALL_ME": "Me Ligue em",
-    "ALL_RIGHTS": "Todos os Direitos Reservados"
+    "ALL_RIGHTS": "Todos os Direitos Reservados",
+    "PROJECT_DETAILS": [{
+          "id": 0,
+          "title": "Coletor Fácil",
+          "description": "O Coletor Fácil, a solução definitiva para gestão de inventário eficaz e segura! Projetado para tornar o processo fácil, rápido e acessível.",
+          "features": [
+            {
+              "title": "Equilíbrio de Inventário com Reconhecimento de Código de Barras por IA",
+              "description": "Nossa solução permite que os usuários criem balanços de inventário sem esforço, aproveitando a tecnologia inteligente de reconhecimento de código de barras. Esse recurso garante contagens de inventário rápidas e precisas, capacitando as empresas a manter níveis de estoque ótimos."
+            },
+            {
+              "title": "Verificação de Recebimento às Cegas:",
+              "description": "Com nosso recurso de verificação de recebimento às cegas, os usuários podem importar faturas e compará-las perfeitamente com os dados de mercadorias recebidas. Esse processo aumenta a precisão e a confiabilidade, proporcionando às empresas uma maior confiança em seus processos de recebimento."
+            },
+            {
+              "title": "Banco de Dados de Produtos da Comunidade:",
+              "description": "Nosso extenso banco de dados de produtos da comunidade oferece acesso a mais de 50.000 entradas de produtos. Os usuários podem facilmente pesquisar e recuperar informações detalhadas sobre vários produtos, facilitando a tomada de decisões informadas e a gestão eficiente de inventário."
+            }
+          ],
+          "techs": [
+            "Angular 17",
+            "Framework Ionic",
+            "Capacitor",
+            "Autenticação Firebase, Firestore, Notificações Push",
+            "Nest.js",
+            "Infraestrutura de Nuvem Oracle (OCI)",
+            "Docker",
+            "API PIX da Efi"
+          ],
+          "urlText": "PlayStore",
+          "url": "https://play.google.com/store/apps/details?id=com.aasoftware.coletorfacil"
+        },
+        {
+          "id": 1,
+          "title": "Site da AASoftware",
+          "description": "A AASoftware capacita empresas com aplicativos inovadores, demonstrando sua experiência e compromisso com a excelência. Explore o portfólio de aplicativos deles e descubra como as soluções construídas com Ionic & Angular podem transformar seu negócio.",
+          "features": [
+            {
+              "title": "Desbloqueie o Poder de Nossos Aplicativos",
+              "description": "Embarque em uma jornada através do nosso ilustre portfólio de aplicativos, onde apresentamos soluções Angular e Ionic de primeira linha. Testemunhe em primeira mão como nossos aplicativos revolucionários de Ionic & Angular podem impulsionar seu negócio para um sucesso sem precedentes."
+            },
+            {
+              "title": "Descubra Nossa História",
+              "description": "Revele a narrativa por trás da AASoftware - das mentes visionárias de nosso fundador à essência de nossa missão. Aprofunde-se em nossa história e entenda a força motriz por trás de nossa busca incessante pela excelência."
+            },
+            {
+              "title": "Vamos Conectar e Transformar Seu Negócio",
+              "description": "Entre em contato conosco e dê o primeiro passo para desbloquear todo o potencial do seu negócio. Vamos colaborar e revolucionar a maneira como você opera."
+            }
+          ],
+          "techs": [
+            "Angular",
+            "Framework Ionic",
+            "Hospedagem Firebase",
+            "FireStore",
+            "Nest.js"
+          ],
+          "urlText": "Site",
+          "url": "https://aasoftware.web.app/"
+        },
+        {
+          "id": 3,
+          "title": "Desmembrador",
+          "description": "No mundo dinâmico do processamento de carne, cálculos precisos de rendimento são cruciais para otimizar lucros e garantir operações eficientes. Apresentamos o aplicativo Desmembrador, sua solução completa para simplificar cálculos de rendimento, comparar resultados entre diferentes cortes e fornecedores, e gerar estimativas de lucro com base em margens e preços baseados em peso.",
+          "features": [
+            {
+              "title": "Cálculos de Rendimento",
+              "description": "Simplifique os cálculos de rendimento para diversos cortes de carne."
+            },
+            {
+              "title": "Benchmarking e Análise",
+              "description": "Compare dados de rendimento entre cortes e fornecedores."
+            },
+            {
+              "title": "Estimativa de Lucro",
+              "description": "Preveja ganhos potenciais com base em margem e preços baseados em peso."
+            }
+          ],
+          "techs": [
+            "Angular",
+            "Framework Ionic",
+            "Autenticação Firebase, Firestore, Notificações Push",
+            "Ainda em desenvolvimento"
+          ],
+          "urlText": "Site",
+          "url": "https://aasoftware.web.app/products?app=desmembrador"
+        },
+        {
+          "id": 4,
+          "title": "Criado com Paixão: Um Portfólio de Design Limpo, Alto Desempenho e Excelência com Angular 17",
+          "description": "Bem-vindo ao meu portfólio, um testemunho da minha paixão inabalável por criar experiências digitais que são visualmente cativantes e impecáveis ​​em termos de funcionalidade. Como um desenvolvedor front-end habilidoso, eu combino meticulosamente princípios de design limpo com tecnologias de ponta para fornecer soluções que não apenas envolvem os usuários, mas também impulsionam resultados comerciais.",
+          "features": [
+            {
+              "title": "Alcançando a Excelência do PageSpeed",
+              "description": "Criar sites de alto desempenho é crucial para um portfólio de sucesso. Ao aderir às melhores práticas, como otimização da estrutura do código, minimização do tamanho dos recursos, aproveitamento de técnicas de cache e garantia de carregamento eficiente de imagens, você pode alcançar consistentemente altas pontuações nos Insights do PageSpeed."
+            },
+            {
+              "title": "Estética e Funcionalidade em Harmonia",
+              "description": "Acredito que o design de um site não deve ser apenas uma camada superficial, mas uma parte integral de sua funcionalidade. Minha abordagem de design está profundamente enraizada no minimalismo, garantindo que cada elemento sirva a um propósito e contribua para uma experiência do usuário descomplicada e intuitiva. Eu elaboro meticulosamente códigos HTML e CSS, aderindo aos mais recentes padrões da web e melhores práticas para criar interfaces visualmente atraentes e responsivas que se adaptam perfeitamente a qualquer dispositivo."
+            },
+            {
+              "title": "Compromisso com a Excelência",
+              "description": "Meu compromisso com a excelência vai além da proficiência técnica. Estou empenhado em seguir as melhores práticas do setor, garantindo que meu código seja bem documentado, testado unitariamente e otimizado para desempenho."
+            }
+          ],
+          "techs": [
+            "HTML",
+            "CSS",
+            "Angular 17",
+            "Hospedagem Firebase"
+          ],
+          "urlText": "GitHub",
+          "url": "https://github.com/aasouzadev/aasportfolio"
+        }
+      ]
+      
 }
