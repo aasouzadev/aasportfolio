@@ -1,6 +1,6 @@
 <section id="contact">
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
+  <p class="section__text__p1">{{ "GET_IN_TOUCH" | translate }}</p>
+  <h1 class="title">{{ "CONTACT_ME" | translate }}</h1>
   <div class="contact-info-upper-container">
     <div class="contact-info-container">
       <p>
@@ -83,7 +83,7 @@
     </div>
     <div class="contact-info-container">
       <p>
-        <a aria-label="Call me" href="tel:+55 71 98101 4992">
+        <a [attr.aria-label]="'CALL_ME' | translate" href="tel:+55 71 98101 4992">
           <svg
             stroke-width="1.5"
             viewBox="0 0 24 24"

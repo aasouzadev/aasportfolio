@@ -1,15 +1,27 @@
-
-  <nav>
-    <div class="nav-links-container">
-      <ul class="nav-links">
-        <li><a aria-label="Section about" href="#about">About</a></li>
-        <li>
-          <a aria-label="Section experience" href="#experience">Experience</a>
-        </li>
-        <li><a aria-label="Section projects" href="#projects">Projects</a></li>
-        <li><a aria-label="Section contact" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <p>Copyright &#169; {{ year }} André Souza. All Rights Reserved.</p>
-
+<nav>
+  <div class="nav-links-container">
+    <ul class="nav-links">
+      <li>
+        <a aria-label="Section about" href="#about">{{
+          "ABOUT" | translate
+        }}</a>
+      </li>
+      <li>
+        <a aria-label="Section experience" href="#experience">{{
+          "EXPERIENCE" | translate
+        }}</a>
+      </li>
+      <li>
+        <a aria-label="Section projects" href="#projects">{{
+          "PROJECTS" | translate
+        }}</a>
+      </li>
+      <li>
+        <a aria-label="Section contact" href="#contact">{{
+          "CONTACT" | translate
+        }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<p>Copyright &#169; {{ year }} André Souza. {{ "ALL_RIGHTS" | translate }}</p>

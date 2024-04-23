@@ -1,9 +1,10 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
