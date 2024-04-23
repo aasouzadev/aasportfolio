@@ -100,7 +100,7 @@
             "url": "https://aasoftware.web.app/"
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "Desmembrador",
             "description": "En el mundo dinámico del procesamiento de carne, los cálculos precisos de rendimiento son cruciales para optimizar ganancias y garantizar operaciones eficientes. Presentamos la aplicación Desmembrador, su solución completa para simplificar cálculos de rendimiento, comparar resultados entre diferentes cortes y proveedores, y generar estimaciones de ganancias basadas en márgenes y precios basados en peso.",
             "features": [
@@ -127,7 +127,7 @@
             "url": "https://aasoftware.web.app/products?app=desmembrador"
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Creado con Pasión: Un Portafolio de Diseño Limpio, Alto Rendimiento y Excelencia con Angular 17",
             "description": "Bienvenido a mi portafolio, un testimonio de mi pasión inquebrantable por crear experiencias digitales que sean visualmente cautivadoras e impecables en términos de funcionalidad. Como un habilidoso desarrollador front-end, combino meticulosamente principios de diseño limpio con tecnologías de vanguardia para ofrecer soluciones que no solo involucran a los usuarios, sino que también impulsan resultados comerciales.",
             "features": [

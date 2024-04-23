@@ -109,7 +109,7 @@
             "url": "https://aasoftware.web.app/"
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "Desmembrador",
             "image": "./assets/desmembradorPost.webp",
             "description": "In the dynamic world of meat processing, accurate yield calculations are crucial for optimizing profits and ensuring efficient operations. Introducing the Desmembrador App, your one-stop solution for streamlining yield calculations, comparing results across different cuts and suppliers, and generating profit estimates based on margins and weight-based pricing.",
@@ -140,7 +140,7 @@
             "url": "https://aasoftware.web.app/products?app=desmembrador"
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Crafted with Passion: A Portfolio of Clean Design, High Performance, and Angular 17 Excellence",
             "image": "./assets/portfolio.webp",
             "description": "Welcome to my portfolio, a testament to my unwavering passion for crafting digital experiences that are both visually captivating and functionally impeccable. As a skilled front-end developer, I meticulously blend clean design principles with cutting-edge technologies to deliver solutions that not only engage users but also drive business results.",
