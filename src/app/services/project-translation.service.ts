@@ -84,7 +84,7 @@ export class ProjectTranslationService {
       url: 'https://aasoftware.web.app/',
     },
     {
-      id: 3,
+      id: 2,
       title: 'Desmembrador',
       image: './assets/desmembradorPost.webp',
       description:
@@ -117,7 +117,7 @@ export class ProjectTranslationService {
       url: 'https://aasoftware.web.app/products?app=desmembrador',
     },
     {
-      id: 4,
+      id: 3,
       title:
         'Crafted with Passion: A Portfolio of Clean Design, High Performance, and Angular 17 Excellence',
       image: './assets/portfolio.webp',
