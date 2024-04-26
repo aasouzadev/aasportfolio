@@ -1,1 +1,47 @@
+#contact {
+  animation: reveal 1ms ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
 
+@keyframes reveal {
+  from {
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    opacity: 1; /* Termina visível */
+  }
+}
+
+p {
+  animation: fly-in-front linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 20%;
+}
+@keyframes fly-in-front {
+  from {
+    opacity: 0;
+    transform: translateX(-500px); /* Starts 100px below viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Ends at original position */
+  }
+}
+
+h1,
+.contact-info-upper-container {
+  animation: fly-in-back linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 20%;
+}
+@keyframes fly-in-back {
+  from {
+    opacity: 0;
+    transform: translateX(500px); /* Starts 100px below viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Ends at original position */
+  }
+}

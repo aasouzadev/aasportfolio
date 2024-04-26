@@ -1,0 +1,47 @@
+#about {
+  animation: reveal 1ms ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+@keyframes reveal {
+  from {
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    opacity: 1; /* Termina visível */
+  }
+}
+
+.about-pic,
+h1 {
+  animation: fly-in-pic linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 40%;
+}
+@keyframes fly-in-pic {
+  from {
+    opacity: 0;
+    transform: translateX(-500px); /* Starts 100px below viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Ends at original position */
+  }
+}
+
+.details-container,
+p {
+  animation: fly-in-details linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 25%;
+}
+@keyframes fly-in-details {
+  from {
+    opacity: 0;
+    transform: translateX(500px); /* Starts 100px below viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Ends at original position */
+  }
+}
